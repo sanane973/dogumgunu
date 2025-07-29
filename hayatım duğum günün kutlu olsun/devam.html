@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bana Kızgın Mısın?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffb6c1;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        /* Evet butonu */
+        #evet {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Hayır butonu */
+        #hayir {
+            background-color: #f44336;
+            color: white;
+            transition: transform 0.3s;
+        }
+        #hayir:hover {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bana kızgın mısın?</h1>
+
+    <!-- Yeni video (otomatik oynar + döngü) -->
+    <video autoplay loop muted playsinline>
+        <source src="WhatsApp Video 2025-07-29 saat 21.17.23_d808ee19.mp4" type="video/mp4">
+        Tarayıcınız video etiketini desteklemiyor.
+    </video>
+
+    <div class="buttons">
+        <button id="evet" onclick="alert('Hahahaha sana kim kızgın olabilir ki 😁👸')">Evet</button>
+        <a href="cevap.html"><button id="hayir">Hayır</button></a>
+    </div>
+</body>
+</html>
